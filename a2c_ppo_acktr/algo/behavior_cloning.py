@@ -14,7 +14,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
-DISTRIBUTION = ['Gaussian', 'Beta'][0]
+DISTRIBUTION = ['Gaussian', 'Beta'][1]
 
 class BehaviorCloning:
     def __init__(self, policy,  device, batch_size=None, lr=None, expert_dataset=None,
